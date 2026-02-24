@@ -12,7 +12,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r dotenv/config src/index.js dotenv_config_path=./.env",
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "start": "node -r dotenv/config src/index.js dotenv_config_path=./.env"
   },
   "devDependencies": {
@@ -23,6 +23,7 @@
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
+    "ejs": "^3.0.2",
     "express": "^5.2.1",
     "mongoose": "^9.2.1"
   }
